@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+
+h1 {
+font-size: 60px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p{
+    max-width: 600px;
+    font-size: 18px;
+}
