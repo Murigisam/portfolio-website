@@ -24,3 +24,16 @@ p{
     max-width: 600px;
     font-size: 18px;
 }
+
+.highlight {
+    border: 3px solix break;
+    padding: 10px;
+}
+
+.about {
+    display: none;
+}
+
+.about.show {
+    display: block;
+}
