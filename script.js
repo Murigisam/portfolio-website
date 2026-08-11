@@ -12,6 +12,9 @@ const contactMe = document.getElementById("contactMe");
 const budgetInput = document.getElementById("budgetInput");
 const budgetBtn = document.getElementById("budgetBtn");
 const budgetMessage = document.getElementById("budgetMessage");
+const projectDecision = document.getElementById("projectDecision");
+const complexityInput = document.getElementById("complexityInput");
+
 
 
 // ==========================================
@@ -47,23 +50,38 @@ function checkBudget(budget){
         return "Client needs a larger budget";
     }
 }
+const projectSection = document.getElementById("projects");
+const projects = [
+    "Portfolio Website", 
+    "Project Evaluator", 
+    "SM solutions"
+];
 
-//console.log (checkBudget(1500));
-function evaluateBudget(clientName, budget, problem) {
+for(let i =0; i< projects.length; i++){
+    const project = document.createElement("p");
+    project.textContent = projects[i];
+    projectSection.appendChild(project);
+}
+
+
+function evaluateProject(budget, complexity) {
+
     if (budget < 500) {
         return "This project needs a larger budget";
 
-    } else if (budget <= 999) {
+    } else if (budget >= 500 && budget <= 999) {
         return "This budget needs further evaluation";
 
-    } else {
+    } else if (budget >= 1000 && complexity === "low") {
         return "This project is ready to move forward";
+
+    } else if (budget >= 1000 && complexity === "medium") {
+        return "This project needs further evaluation";
+
+    } else if (budget >= 1000 && complexity === "high") {
+        return "This project needs further review";
     }
 }
-
-console.log(evaluateBudget(50));
-console.log(evaluateBudget(50000));
-console.log(evaluateBudget(999));
 
 
 // ==========================================
@@ -93,6 +111,8 @@ contactMe.addEventListener("click", function(){
 
 
 
+
+
 // ==========================================
 // 4. EVENT LISTENERS
 // ==========================================
@@ -116,12 +136,12 @@ myWork.addEventListener("click", function () {
 // About button
 aboutBtn.addEventListener("click", function () {
     about.classList.toggle("show");
-
     if (about.classList.contains("show")) {
         aboutBtn.textContent = "Hide About Me";
     } else {
         aboutBtn.textContent = "More About Me";
     }
+
 });
 
 //CONTACT ME BUTTOPM
@@ -135,8 +155,17 @@ contactMe.addEventListener("click", function (){
     }
 });
 
-budgetBtn.addEventListener("click", function() {
-const budget = Number(budgetInput.value);
 
-budgetMessage.textContent = checkBudget(budget);
+//budget button
+budgetBtn.addEventListener("click", function() {
+console.log("button clicked");
+    const budget = Number(budgetInput.value);
+    const complexity = complexityInput.value;
+
+    const decision = evaluateProject(budget, complexity);
+    console.log(decision);
+
+    projectDecision.textContent = decision;
+    
+
 });

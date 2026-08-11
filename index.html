@@ -3,89 +3,145 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name = "viewporrt" content="width=device-width, iniitial-scale=1.0">
-    <title> Samuel Maina | software Engineer</title>
-    <link rel ="stylesheet" href="style.css"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Samuel Maina | Software Engineer</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- ==========================================
+         HEADER
+         ========================================== -->
+
     <header>
+
         <h1>Samuel Maina</h1>
-        <h2>Software Engineer | Building practical technology solutions</h2>
-    
+
+        <h2>
+            Software Engineer | Building practical technology solutions
+        </h2>
+
         <p>
-            I am a Software Engineering graduate passionate about building technology
-            that solves real-world problems by combining software, buiness understanding, and creativity.
+            I am a Software Engineering graduate passionate about building
+            technology that solves real-world problems by combining software,
+            business understanding, and creativity.
         </p>
 
-        <p id="message">My portfolio!</p>
+       <p id="message">My portfolio!</p>
+
         <p id="workMessage">My work</p>
+
         <h2 id="heading">SM Solutions</h2>
 
         <button id="helloBtn">Say Hello</button>
-        <button id="myWork">My work</button>
 
+        <button id="myWork">My Work</button>
+
+              <section id ="projects">
+            <h2>My Projects</h2>
+        </section>
 
     </header>
 
-    <button id ="aboutBtn">More About me</button>
-  
-    <section id ="about" class ="about">
-        <h2> Me </h2>
+
+    <!-- ==========================================
+         ABOUT ME
+         ========================================== -->
+
+    <button id="aboutBtn">More About Me</button>
+
+    <section id="about" class="about">
+
+        <h2>About Me</h2>
 
         <p>
-
-            Hi! I am Samuel a Software Engineering graduate passionate about building 
-            practical solutions that solve real-world problems.
-
-        </p>
-
-        <p>
-            My background combines software development with business, supply chain and project management thinking, allowing me 
-            to approach technology form both a technical and operational perspective.
-        </p>
-
-        <p> 
-            I enjoy creating and working with tools, systems , and experiences that make work easier, businesses stronger, 
-            and people's lives better.
+            Hi! I am Samuel, a Software Engineering graduate passionate about
+            building practical solutions that solve real-world problems.
         </p>
 
         <p>
-
-            I dont's see problems as just things to be solved but things to be learned from, expoited in a positive way and 
-            used to help solve future challanges.
-
+            My background combines software development with business, supply
+            chain and project management thinking, allowing me to approach
+            technology from both a technical and operational perspective.
         </p>
 
         <p>
-            My background in Supply chain and project management is an important tool for me when it comes to approaching 
-            large and complex problems, dealing with large sets of data and working with big groups. I am confident working in 
-            stress intensive environments, and managing work overload.
+            I enjoy creating and working with tools, systems, and experiences
+            that make work easier, businesses stronger, and people's lives
+            better.
         </p>
 
-        <p> 
-            I believe I am a competent, transparent, self driven, disciplined person who relies not on motivation to get things done
-             goes out there and gets things done. My desire to deliver is my sole drive in my personal and proffesional life.
-             Check out my work I will let that speak for me and show you that I can.
+        <p>
+            I don't see problems as just things to be solved but things to be
+            learned from, exploited in a positive way, and used to help solve
+            future challenges.
         </p>
+
+        <p>
+            My background in Supply Chain and project management is an important
+            tool for me when it comes to approaching large and complex problems,
+            dealing with large sets of data and working with big groups. I am
+            confident working in stress-intensive environments and managing
+            work overload.
+        </p>
+
+        <p>
+            I believe I am a competent, transparent, self-driven, disciplined
+            person who relies not on motivation to get things done but goes out
+            there and gets things done. My desire to deliver is my sole drive
+            in my personal and professional life. Check out my work. I will let
+            that speak for me and show you that I can.
+        </p>
+
     </section>
 
 
-    <div>
+    <!-- ==========================================
+         PROJECT EVALUATION
+         ========================================== -->
+
+    <section>
+
         <h3>Project Budget Check</h3>
 
-        <input id ="budgetInput" type ="number" placeolder = "Enter Project Budget">
+        <input
+            id="budgetInput"
+            type="number"
+            placeholder="Enter Project Budget"
+        >
+<select id="complexityInput">
+    <option value="low">Low Complexity</option>
+    <option value="medium">Medium Complexity</option>
+    <option value="high">High Complexity</option>
+</select>
 
-        <button id = "budgetBtn">Check Budget</button>
+        <button id="budgetBtn">
+            Check Budget
+        </button>
 
-        <p id = "budgetMessage"></p>
-    </div>
+        <p id="projectDecision"></p>
+
+    </section>
 
 
-    <button id ="contactMe">Contact Information</button>
-    
+    <!-- ==========================================
+         CONTACT
+         ========================================== -->
+
+    <button id="contactMe">
+        Contact Information
+    </button>
+
+
+    <!-- ==========================================
+         JAVASCRIPT
+         ========================================== -->
 
     <script src="script.js"></script>
 
-</body> 
+</body>
+
+</html>
