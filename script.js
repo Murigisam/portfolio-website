@@ -1,3 +1,5 @@
+console.log("JavaScript loaded");
+
 // ==========================================
 // 1. DOM ELEMENTS
 // ==========================================
@@ -177,10 +179,10 @@ contactMe.addEventListener("click", function(){
 
 // Say Hello button
 helloBtn.addEventListener("click", function () {
-    welcomeUser();
-    helloBtn.style.backgroundColor = "blue";
-    helloBtn.style.color = "white";
+    window.location.href = "contact.html";
 });
+    helloBtn.style.backgroundColor = "brown";
+    helloBtn.style.color = "white";
 
 
 // My Work button
@@ -204,31 +206,11 @@ myWork.addEventListener("click", function () {
 
 //});
 
-//CONTACT ME BUTTOPM
-contactMe.addEventListener("click", function (){
-    contactMe.classList.toggle("show");
-
-    if(contactMe.classList.contains("show")){
-        contactMe.textContent = "Yay!";
-    }else{
-        contactMe.textContent = "Contact Information";
-    }
+//CONTACT ME BUTTON
+contactMe.addEventListener("click", function () {
+    window.location.href = "contact.html";
 });
 
-
-//budget button
-budgetBtn.addEventListener("click", function() {
-console.log("button clicked");
-    const budget = Number(budgetInput.value);
-    const complexity = complexityInput.value;
-
-    const decision = evaluateProject(budget, complexity);
-    console.log(decision);
-
-    projectDecision.textContent = decision;
-    
-
-});
 
 myWork.addEventListener("click", function () {
     myWork.textContent = "Projects Loaded!";

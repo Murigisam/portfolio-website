@@ -45,18 +45,26 @@ header{
     transform: translateY(-2px);
 }
 
+#contactMe {
+    display: block;
+    margin: 30px auto;
+}
+
 
 h1 {
 font-size: 60px;
+text-align: center;
 }
 
 h2 {
     font-size: 30px;
+    text-align: center;
 }
 
 p{
     max-width: 600px;
-    font-size: 18px;
+    font-size: 15px;
+    text-align:justify;
 }
 
 .highlight {

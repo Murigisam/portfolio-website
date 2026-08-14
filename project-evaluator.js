@@ -10,20 +10,20 @@ const projectDecision = document.getElementById("projectDecision");
 function evaluateProject(budget, complexity) {
 
     if (budget < 500) {
-        return "This project needs a larger budget";
+        return "The project needs a larger budget";
          projectDecision.classList.add("warning");
 
     } else if (budget >= 500 && budget <= 999) {
-        return "This budget needs further evaluation";
+        return "The budget needs further evaluation";
 
     } else if (budget >= 1000 && complexity === "low") {
-        return "This project is ready to move forward";
+        return "The project is ready to move forward";
 
     } else if (budget >= 1000 && complexity === "medium") {
-        return "This project needs further evaluation";
+        return "The project needs further evaluation";
 
     } else if (budget >= 1000 && complexity === "high") {
-        return "This project needs further review";
+        return "The project needs further review";
     }
 }
 
@@ -34,27 +34,34 @@ budgetBtn.addEventListener("click", function() {
     console.log("button clicked");
 
     const budget = Number(budgetInput.value);
+    const formattedBudget = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD"
+}).format(budget);
     const complexity = complexityInput.value;
 
     const decision = evaluateProject(budget, complexity);
 
-projectDecision.textContent = decision;
-
+projectDecision.innerHTML = `
+    <strong>Budget:</strong> ${formattedBudget}<br>
+    <strong>Complexity:</strong> ${complexity}<br>
+    <strong>Assessment:</strong> ${decision}
+`;
 projectDecision.classList.remove("ready", "warning", "review");
 
-if (decision === "This project is ready to move forward") {
+if (decision === "The project is ready to move forward") {
 
     projectDecision.classList.add("ready");
 
-} else if (decision === "This budget needs further evaluation") {
+} else if (decision === "The project needs a larger budget") {
 
     projectDecision.classList.add("warning");
 
-} else if (decision === "This project needs further evaluation") {
+} else if (decision === "The budget needs further evaluation") {
 
     projectDecision.classList.add("warning");
 
-} else if (decision === "This project needs further review") {
+} else if (decision === "The project needs further review") {
 
     projectDecision.classList.add("review");
 
