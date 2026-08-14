@@ -1,0 +1,55 @@
+#projectDecision {
+    margin-top: 20px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.ready {
+    color: green;
+    background-color: #e8f5e9;
+    border: 1px solid green;
+}
+
+.warning {
+    color: #b36b00;
+    background-color: #fff4db;
+    border: 1px solid orange;
+}
+
+.review {
+    color: #b00020;
+    background-color: #fdeaea;
+    border: 1px solid red;
+}
+
+.evaluator {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 50px;
+    border: 1px solid black;
+    border-radius: 7px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+#budgetInput,#complexityInput,#budgetBtn {
+    padding: 10px;
+    border : 1px solid brown;
+    border-radius : 6px;
+    font-size : 15px;
+     margin: 5px;
+    
+}
+
+#budgetBtn {
+    background-color: #b36b00;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 10px 18px;
+}
+
+#budgetBtn hover:{
+    transform: translateY(-2px);
+
+}

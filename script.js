@@ -56,25 +56,29 @@ const projects = [
     {
         name: "PORTFOLIO WEBSITE",
         description: "My personal software engineering portfolio",
-        technology: "HTML, CSS, JavaScript"
+        technology: "HTML, CSS, JavaScript",
+        link: "#"
     },
 
     {
         name: "PROJECT EVALUATOR",
         description: "A tool that evaluates projects based on budget and complexity",
-        technology: "JavaScript"
+        technology: "JavaScript",
+        link: "project-evaluator.html"
     },
 
     {
         name: "SM SOLUTIONS - official",
         description: "Practical technology solutions for real-world problems ",
-        technology: "HTML, CSS, JavaScript"
+        technology: "HTML, CSS, JavaScript",
+        link: "#"
     },
 
     {
         name: "SALES DASHBOARD",
         description: "A Power BI dashboard analyzing business sales data",
-        technology: "Power BI"
+        technology: "Power BI",
+        link: "#"
     },
 
    // {
@@ -91,6 +95,8 @@ for(let i = 0; i < projects.length; i++) {
     const projectDescription = document.createElement("p");
     const technologyTitle = document.createElement("h4");
     const projectTechnology = document.createElement("p");
+    const projectButton = document.createElement("button");
+    projectButton.textContent = "View Project";
 
     const projectCard = document.createElement("div")
     projectCard.classList.add("project-card");
@@ -105,8 +111,13 @@ for(let i = 0; i < projects.length; i++) {
     projectCard.appendChild(projectDescription);
     projectCard.appendChild(technologyTitle);
     projectCard.appendChild(projectTechnology);
+    projectCard.appendChild(projectButton);
 
     projectGrid.appendChild(projectCard);
+
+    projectButton.addEventListener("click", function () {
+    window.location.href = projects[i].link;
+});
 }
 
 
@@ -230,3 +241,5 @@ myWork.addEventListener("click", function () {
         myWork.textContent = "My Work";
     }, 500);
 });
+
+

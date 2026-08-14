@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project-evaluator.css">
+
+<body>
+
+    <header>
+        <h1>Project Evaluator</h1>
+
+        <p>
+            A JavaScript tool that evaluates projects based on
+            budget and complexity.
+        </p>
+    </header>
+
+    <main>
+
+        <section class = "evaluator">
+            <h2>Evaluate a Project</h2>
+
+            <input
+                id="budgetInput"
+                type="number"
+                placeholder="Enter Project Budget"
+            >
+
+            <select id="complexityInput">
+                <option value="low">Low Complexity</option>
+                <option value="medium">Medium Complexity</option>
+                <option value="high">High Complexity</option>
+            </select>
+
+            <button id="budgetBtn">
+                Check Budget
+            </button>
+
+            <p id="projectDecision"></p>
+
+        </section>
+
+    </main>
+
+    <script src="project-evaluator.js"></script>
+
+</body>
