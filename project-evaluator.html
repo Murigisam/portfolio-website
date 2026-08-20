@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="project-evaluator.css">
+    <title>Project Evaluator</title>
+</head>
 
 <body>
 
@@ -13,21 +15,49 @@
 
         <p>
             A JavaScript tool that evaluates projects based on
-            budget and complexity.
+            budget, complexity, risk, and timeline.
         </p>
     </header>
 
     <main>
 
-        <section class = "evaluator">
+        <section class="evaluator">
+
             <h2>Evaluate a Project</h2>
+
+            <label for="projectDescription">Project Description</label>
+
+            <textarea
+                id="projectDescription"
+                rows="5"
+                placeholder="Describe the project, its goals, scope, and expected outcome..."
+            ></textarea>
+
+            <label for="startDate">Expected Start Date</label>
+
+            <input
+                id="startDate"
+                type="date"
+            >
+
+            <label for="endDate">Expected End Date</label>
+
+            <input
+                id="endDate"
+                type="date"
+            >
+
+            <label for="budgetInput">Project Budget</label>
 
             <input
                 id="budgetInput"
                 type="number"
                 step="0.01"
+                min="0"
                 placeholder="Enter Project Budget"
             >
+
+            <label for="complexityInput">Project Complexity</label>
 
             <select id="complexityInput">
                 <option value="low">Low Complexity</option>
@@ -35,11 +65,19 @@
                 <option value="high">High Complexity</option>
             </select>
 
-            <button id="budgetBtn">
-                Check Budget
+            <label for="riskInput">Project Risk</label>
+
+            <select id="riskInput">
+                <option value="low">Low Risk</option>
+                <option value="medium">Medium Risk</option>
+                <option value="high">High Risk</option>
+            </select>
+
+            <button id="budgetBtn" type="button">
+                Evaluate Project
             </button>
 
-            <p id="projectDecision"></p>
+            <div id="projectDecision"></div>
 
         </section>
 
@@ -48,3 +86,5 @@
     <script src="project-evaluator.js"></script>
 
 </body>
+
+</html>

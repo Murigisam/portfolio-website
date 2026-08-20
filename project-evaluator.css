@@ -1,9 +1,116 @@
-#projectDecision {
+/* =========================
+   GENERAL PAGE STYLES
+========================= */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f4f0;
+    color: #222;
+}
+
+header {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 60px;
+}
+
+header p {
+    margin: 0;
+    font-size: 20px;
+}
+
+
+/* =========================
+   EVALUATOR CONTAINER
+========================= */
+
+.evaluator {
+    max-width: 600px;
+    margin: 40px auto 60px;
+    padding: 40px;
+    border: 1px solid #222;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.evaluator h2 {
+    margin-top: 0;
+}
+
+
+/* =========================
+   FORM ELEMENTS
+========================= */
+
+.evaluator label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+#projectDescription,
+#budgetInput,
+#complexityInput,
+#riskInput,
+#startDate,
+#endDate {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid brown;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+#projectDescription {
+    resize: vertical;
+    min-height: 120px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+#budgetBtn {
     margin-top: 20px;
+    padding: 10px 18px;
+    border: 1px solid #8a4f00;
+    border-radius: 6px;
+    background-color: #b36b00;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#budgetBtn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   PROJECT RESULT
+========================= */
+
+#projectDecision {
+    margin-top: 25px;
     padding: 15px 20px;
     border-radius: 8px;
     font-weight: bold;
 }
+
+
+/* =========================
+   DECISION STATES
+========================= */
 
 .ready {
     color: green;
@@ -12,53 +119,34 @@
 }
 
 .warning {
-    color:red;
+    color: red;
     background-color: #fff4db;
     border: 1px solid orange;
 }
 
 .review {
-    color:rgb(211, 38, 8);
+    color: rgb(211, 38, 8);
     background-color: #f7e1e1;
     border: 1px solid rgb(122, 7, 7);
 }
 
-.evaluator {
-    max-width: 600px;
-    margin: 60px auto;
-    padding: 50px;
-    border: 1px solid black;
-    border-radius: 7px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
-}
 
-#budgetInput,#complexityInput,#budgetBtn {
-    padding: 10px;
-    border : 1px solid brown;
-    border-radius : 6px;
-    font-size : 15px;
-     margin: 5px;
-    
-}
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
 
-#budgetBtn {
-    background-color: #b36b00;
-    cursor: pointer;
-    transition: 0.3s;
-    padding: 10px 18px;
-}
+@media (max-width: 700px) {
 
-#budgetBtn hover {
-    transform: translateY(-2px);
+    h1 {
+        font-size: 42px;
+    }
 
-}
-h1{
-    font-size: 60px;
-    text-align: center;
-}
+    header p {
+        font-size: 17px;
+    }
 
-p{
-    font-size: 20px;
-    text-align: center;
+    .evaluator {
+        margin: 20px;
+        padding: 25px;
+    }
 }

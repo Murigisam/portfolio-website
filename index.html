@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta
+        name="description"
+        content="Samuel Maina | Software Engineer building practical technology solutions at the intersection of software, business, and operations."
+    >
+
     <title>Samuel Maina | Software Engineer</title>
 
     <link rel="stylesheet" href="style.css">
@@ -12,106 +17,211 @@
 
 <body>
 
-    <!-- ==========================================
-         HEADER
-         ========================================== -->
+    <!-- NAVIGATION -->
 
-    <header>
+    <nav class="navbar">
 
-        <h1>Samuel Maina</h1>
+        <a href="#" class="brand">SM<span>.</span></a>
 
-        <h2>
-            Software Engineer | Building practical technology solutions
-        </h2>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Work</a>
+            <a href="#contact">Contact</a>
+        </div>
 
-        <h3>
-            I am a Software Engineer passionate about building technology that solves real-world problems by combining software, business understanding, and creativity.
-        </h3>
+    </nav>
 
 
-        <h2 id="heading">SM Solutions</h2>
+    <main>
 
-        <button id="myWork">View My Work</button>
+        <!-- HERO -->
 
-        <button id="helloBtn">Say Hello</button>
+        <header class="hero">
 
+            <div class="hero-content">
 
-    </header>
+                <p class="hero-label">
+                    SOFTWARE ENGINEER / BUILDER
+                </p>
 
+                <h1>
+                    Samuel<br>
+                    <span>Maina.</span>
+                </h1>
 
-      <!--   ==========================================
-         ABOUT ME
-         ========================================== -->
+                <p class="hero-statement">
+                    Building practical technology solutions at the
+                    intersection of <strong>software, business,</strong>
+                    and <strong>operations.</strong>
+                </p>
 
-   <!-- <button id="aboutBtn">More About Me</button>-->
+                <div class="hero-actions">
 
+                    <button id="myWork" type="button">
+                        View My Work
+                        <span>↓</span>
+                    </button>
 
-    <section id="about" class="about">
+                    <button id="helloBtn" type="button">
+                        Let's Talk
+                        <span>↗</span>
+                    </button>
 
-        <h2>About Me</h2>
+                </div>
 
-        <p>
-            Hi! I am Samuel, a Software Engineer passionate about
-            building practical solutions that solve real-world business problems.
-        </p>
+            </div>
 
-        <p>
-            My background combines software development with business, supply
-            chain and project management skills, allowing me to approach
-            technology from both a technical and operational perspective.
-        </p>
+            <div class="hero-meta">
 
-        <p>
-            I enjoy creating and working with tools, systems, and experiences
-            that make work easier, businesses stronger, and people's lives
-            better.
-        </p>
+                <span>BASED IN THE U.S.</span>
+                <span>2026</span>
 
-        <p>
-            I don't see problems as just things to be solved but things to be
-            learned from, exploited in a positive way, and used to help solve
-            future challenges.
-        </p>
+            </div>
 
-        <p>
-            My background in Supply Chain and project management is an important
-            tool for me when it comes to approaching large and complex problems,
-            dealing with large sets of data and working with big groups. I am
-            confident working in stress-intensive environments and managing
-            work overload.
-        </p>
+            <div class="hero-number">
+                01
+            </div>
 
-        <p>
-            I believe I am a competent, transparent, self-driven, disciplined
-            person who relies not on motivation to get things done but goes out
-            there and gets things done. My desire to deliver is my sole drive
-            in my personal and professional life. Check out my work. I will let
-            that speak for me and show you that I can.
-        </p>
-
-    </section>
+        </header>
 
 
-    <!---PROJECTS SECTION-->
-    
-            <section id="projects">
-    <h2>My Projects</h2>
-    <div id="projectGrid"></div>
-            </section>
+        <!-- ABOUT -->
+
+        <section id="about" class="about section">
+
+            <div class="section-label">
+                <span>02</span>
+                <span>ABOUT</span>
+            </div>
+
+            <div class="about-content">
+
+                <h2>
+                    I don't just build software.
+                    <span>I think about the problem behind it.</span>
+                </h2>
+
+                <div class="about-text">
+
+                    <p>
+                        I am a Software Engineer interested in building
+                        technology that solves problems people and businesses
+                        actually experience.
+                    </p>
+
+                    <p>
+                        My background combines software development with
+                        supply chain and project management. That gives me
+                        a different perspective when approaching technical
+                        problems: I think about the system, the people using
+                        it, the resources involved, and the outcome it needs
+                        to produce.
+                    </p>
+
+                    <p>
+                        I enjoy taking complex problems, understanding what
+                        is actually happening beneath the surface, and
+                        turning that understanding into practical systems.
+                    </p>
+
+                </div>
+
+                <div class="capabilities">
+
+                    <div>
+                        <span>01</span>
+                        <strong>SOFTWARE</strong>
+                    </div>
+
+                    <div>
+                        <span>02</span>
+                        <strong>BUSINESS</strong>
+                    </div>
+
+                    <div>
+                        <span>03</span>
+                        <strong>OPERATIONS</strong>
+                    </div>
+
+                    <div>
+                        <span>04</span>
+                        <strong>PROBLEM SOLVING</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
 
 
-    <!-- ==========================================
-         CONTACT
-         ========================================== -->
+        <!-- PROJECTS -->
 
-    <button id="contactMe">
-        Contact Information
-    </button>
+        <section id="projects" class="projects section">
+
+            <div class="section-label">
+                <span>03</span>
+                <span>SELECTED WORK</span>
+            </div>
+
+            <div class="projects-header">
+
+                <h2>
+                    Things I've<br>
+                    <span>been building.</span>
+                </h2>
+
+                <p>
+                    A collection of projects exploring software,
+                    data, business systems, and practical problem solving.
+                </p>
+
+            </div>
+
+            <div id="projectGrid" class="project-grid"></div>
+
+        </section>
 
 
-    <!-- ==========================================
-         JAVASCRIPT
-         ========================================== -->
+        <!-- CONTACT -->
+
+        <section id="contact" class="contact section">
+
+            <div class="section-label">
+                <span>04</span>
+                <span>CONTACT</span>
+            </div>
+
+            <div class="contact-content">
+
+                <p class="contact-label">
+                    HAVE A PROBLEM WORTH SOLVING?
+                </p>
+
+                <h2>
+                    Let's build<br>
+                    <span>something useful.</span>
+                </h2>
+
+                <button id="contactMe" type="button">
+                    Get In Touch
+                    <span>↗</span>
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <span>© 2026 Samuel Maina</span>
+        <span>SM Solutions</span>
+
+    </footer>
+
 
     <script src="script.js"></script>
 
