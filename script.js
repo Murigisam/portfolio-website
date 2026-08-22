@@ -31,17 +31,17 @@ const projects = [
     {
         name: "PROJECT EVALUATOR",
         description:
-            "A tool that evaluates projects based on budget, complexity, risk, and timeline.",
+            "A tool that evaluates projects based on budget, complexity, risk, and timeline. With Agentic Engineering intergration for decision making, consulting and application",
         technology:
-            "HTML, CSS, JavaScript",
+            "HTML, CSS, JavaScript,AI",
         link:
             "project-evaluator.html"
     },
 
     {
-        name: "SM SOLUTIONS",
+        name: "SM CONSULTING",
         description:
-            "Practical technology solutions designed to solve real-world problems.",
+            "Official webpage for SMC. Helping businesses find quality technology solutions.",
         technology:
             "HTML, CSS, JavaScript",
         link:
