@@ -56,7 +56,30 @@ const projects = [
             "Power BI",
         link:
             "#"
+    },
+
+    {
+        name: "PROJECT LIFE",
+        description:
+            "YOUR LIFE IS THE MAIN QUEST.THIS IS EVERYTHING ELSE. FUCK IT. WHY NOT?",
+        technology:
+            "HTML, CSS, JavaScript,AI",
+        link:
+            "project-Life.html"
+    },
+
+     {
+        name: "SALON WEBPAGE AND APP",
+        description:
+            "WORKING PROGRESS",
+        technology:
+            "HTML, CSS, JavaScript,AI",
+        link:
+            "project-Life.html"
     }
+
+
+
 ];
 
 

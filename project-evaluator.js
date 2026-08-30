@@ -24,7 +24,6 @@ function getProjectFromForm() {
     const complexity = complexityInput.value;
     const risk = riskInput.value;
     const description = projectDescription.value;
-
     const startDate = startDateInput.value;
     const endDate = endDateInput.value;
 
